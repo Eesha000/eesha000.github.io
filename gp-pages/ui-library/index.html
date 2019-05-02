@@ -1,1 +1,647 @@
-hello
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handtouch</title>
+   	<link rel="icon" type="img/png" href="img/handtouch.png">
+   	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   	<meta name= "viewport" content="width=device-width, initial-scale =1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body id="main">
+	<div class="navbar" id="nav">
+    	<div class="container">
+    		<div class="logo">
+    			<img src="img/pic.png" alt="handtouch">
+    			<button class="icon" id="i" onclick="myFunction()">
+    				<img src="img/dot.png" style="height: 40px; width: 40px; padding: 1%"></button>
+    		</div>
+    		<div class="menu70" id="myTopnav">
+	    		<ul class="menu">
+						<li><a href="#intro" id="about">Intro</a></li>
+						<li><div class="dropdown">
+							<a class="dropbtn" id="docu">Docu </a>
+								<div class="dropdown-content" id="myDropdown">
+								    <a href="#alerts" class="nav-link">Alerts</a>
+								    <a href="#buttons" class="nav-link">Button</a>
+									<a href="#form" class="nav-link">Form</a>
+									<a href="#grid" class="nav-link">Grid</a>
+									<a href="#tables" class="nav-link">Table</a>
+									<a href="#typography" class="nav-link">Typography</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</li>
+						<li><a id="contact" href="https://http://handtouch.baryahost.com/" download="handtouch.zip">Download</a></li>
+					<div class="clearfix"></div>
+				</ul>
+			</div>
+			<div class="clearfix"></div>	
+		</div>
+    </div>
+
+    <div class="jumbotron" id="intro">
+    	<div class="container">
+    		<div class="about">
+    		  <img src="img/handtouch.png" alt="HandTouch">	
+    		  <p>
+				Welcome to HandTouch - is a free and open source toolkit for developing. Easy to work with beginners and can access using any platforms. Styles are designed to be a starting point, not a UI framework.
+			  </p>
+			  <div class="boot">
+			  <a class="btn bt-primary bl " href="https://handtouch.baryahost.com/" download="handtouch.zip">DOWNLOAD</a>	
+			  </div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+    </div>
+
+    <div class="content" id="alerts">
+		<div class="container">
+			<div class="col">
+				<h3 id="component">Alerts</h3>
+					<p class="p1">
+						Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+					</p>
+				<div class="container1">
+
+					<div class="a-success">
+					<h3>Success Alert!</h3>
+					<p>&nbsp;&nbsp;Success Alert fully function!</p>
+					<div class="clearfix"></div>
+					</div>
+					<div class="code text-center">
+					 <code>
+					  &lt;div class="a-success"&gt;<br>
+						&lt;h3&gt;Success Alert!&lt;/h3&gt;<br>
+						&lt;p&gt;&nbsp;Success Alert fully function!&lt;/p&gt;<br>
+					  &lt;/div&gt;<br>
+					 </code>
+					</div>
+
+					<div class="a-info">
+					<h3>Info Alert!</h3>
+					<p>&nbsp;&nbsp;Info Alert fully function!</p>
+					<div class="clearfix"></div>
+					</div>
+					<div class="code">
+					 <code>
+					  &lt;div class="a-info"&gt;<br>
+						&lt;h3&gt;Info Alert!&lt;/h3&gt;<br>
+						&lt;p&gt;&nbsp;Info Alert fully function!&lt;/p&gt;<br>
+					  &lt;/div&gt;<br>
+					 </code>
+					</div>
+
+					<div class="a-warning">
+					<h3>Warning Alert!</h3>
+					<p>&nbsp;&nbsp;Warning Alert fully function!</p>
+					<div class="clearfix"></div>
+					</div>
+					<div class="code">
+					 <code>
+					  &lt;div class="a-warning"&gt;<br>
+						&lt;h3&gt;Warning Alert!&lt;/h3&gt;<br>
+						&lt;p&gt;&nbsp;Warning Alert fully function!&lt;/p&gt;<br>
+					  &lt;/div&gt;<br>
+					 </code>
+					</div>
+
+					<div class="a-danger">
+					<h3>Danger Alert!</h3>
+					<p>&nbsp;&nbsp;Danger Alert fully function!</p>
+					<div class="clearfix"></div>
+					</div>
+					<div class="code">
+					 <code>
+					  &lt;div class="a-danger"&gt;<br>
+						&lt;h3&gt;Danger Alert!&lt;/h3&gt;<br>
+						&lt;p&gt;&nbsp;Danger Alert fully function!&lt;/p&gt;<br>
+					  &lt;/div&gt;<br>
+					 </code>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="content" id="buttons">
+		<div class="container">
+			<div class="col">
+				<h3 id="component">Buttons</h3>
+				<p class="p1">
+					Buttons are an essential part of every user. Handtouch includes several basic styles for button. We have buttons like Primary, Success, Danger, Warning, and Secondary with or without outlines and also, Block buttons.
+
+				</p>
+				<div class="container1">
+
+					<button class="btn bt-primary" id="bt1">Primary</button>
+					<button class="btn bt-success" id="bt2">Success</button>
+					<button class="btn bt-danger" id="bt3">Danger</button>
+					<button class="btn bt-warning" id="bt4">Warn</button>
+					<button class="btn bt-secondary" id="bt5">Secondary</button>
+
+					<div class="code">
+					 <code id="btn1">
+					  &lt;button class="btn bt-primary"&gt;Primary&lt;/button&gt;<br>
+					 </code>
+					 <code id="btn2">
+					  &lt;button class="btn bt-success"&gt;Success&lt;/button&gt;<br>
+					 </code>
+					 <code id="btn3">
+					  &lt;button class="btn bt-danger"&gt;Danger&lt;/button&gt;<br>
+					 </code>
+					 <code id="btn4">
+					  &lt;button class="btn bt-warning"&gt;Warn&lt;/button&gt;<br>
+					 </code>
+					 <code id="btn5">
+					  &lt;button class="btn bt-secondary"&gt;Secondary&lt;/button&gt;<br>
+					 </code>
+					</div>
+
+					<button class="btn bt-line-primary" id="btl1">Primary</button>
+					<button class="btn bt-line-success" id="btl2">Success</button>
+					<button class="btn bt-line-danger" id="btl3">Danger</button>
+					<button class="btn bt-line-warning" id="btl4">Warn</button>
+					<button class="btn bt-line-secondary" id="btl5">Secondary</button>
+
+					<div class="code">
+					 <code id="btnl1">
+					  &lt;button class="btn bt-line-primary"&gt;Primary&lt;/button&gt;<br>
+					 </code>
+					 <code id="btnl2">
+					  &lt;button class="btn bt-line-success"&gt;Success&lt;/button&gt;<br>
+					 </code>
+					 <code id="btnl3">
+					  &lt;button class="btn bt-line-danger"&gt;Danger&lt;/button&gt;<br>
+					 </code>
+					 <code id="btnl4">
+					  &lt;button class="btn bt-line-warning"&gt;Warn&lt;/button&gt;<br>
+					 </code>
+					 <code id="btnl5">
+					  &lt;button class="btn bt-line-secondary"&gt;Secondary&lt;/button&gt;<br>
+					 </code>
+					</div>
+
+					<div>
+					 <button class="btn bt-primary bl" id="btl5">primary</button>
+					</div>
+		
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="content" id="form">
+		<div class="container">
+			<div class="col">
+				<h3 id="component">Forms</h3>
+				<p class="p1">
+					Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.
+				</p>
+				<div class="container1">
+				  <div>
+				  	<h3>Sign Up</h3>
+				  	<div class="con-9">
+				  	  <div class="form-group">
+				  	  	<input type="text" class="form-control" name="firstname" placeholder="First Name">
+				  	  </div>
+				  	  <div class="form-group">
+				  	  	<input type="text" class="form-control" name="lastname" placeholder="Last Name">
+				  	  </div>
+				  	  <button class="btn bt-line-primary" id="btl1">Sign Up</button>
+				  	</div>
+				  </div>
+
+				  <form class="form form-horizontal">
+				  	<h2>Log In</h2>
+				  	<div>
+					<input type="text" id="fname" class="hi" name="firstname" placeholder="First Name">
+					</div>
+					<div>
+					<input type="text" id="lname" class="hi" name="lastname" placeholder="Last Name">
+					</div>
+					<div>
+					 <button class="btn bt-primary bl">Sign Up</button>
+					</div>
+				  </form>
+
+					<form action="#">
+						<div class="row">
+							<div class="col-25">
+							<label for="fname">First Name:</label>
+							</div>
+							<div class="col-75">
+							<input type="text" id="fname" name="firstname" placeholder="First Name">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+							<label for="lname">Last Name:</label>
+							</div>
+							<div class="col-75">
+							<input type="text" id="lname" name="lastname" placeholder="Last Name">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+							<label for="country">Country:</label>
+							</div>
+							<div class="col-75">
+							<select id="country" name="country">
+								<option value="australia">Australia</option>
+								<option value="canada">Canada</option>
+								<option value="usa">USA</option>
+								<option value="usa">Philippines</option>
+							</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+							<label for="comment">Comment:</label>
+							</div>
+							<div class="col-75">
+								<textarea id="comment" name="comment" placeholder="Write your comment here" 
+									style="height:100px"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25"></div>
+							<div class="col-75">
+							 <button type="submit" class="buttons">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="code">
+					<code>
+						&lt;form action="#"&gt;<br>
+						&nbsp;&lt;div class="col-25"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;label for="fname">First Name:&lt;/label&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class="col-75"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;input type="text" id="fname" name="firstname" placeholder="First Name"&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&lt;/div&gt;<br>
+						&nbsp;&lt;div class="row"&gt;<br>
+							&nbsp;&nbsp;&lt;div class="col-25"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;label for="lname">Last Name:&lt;/label&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class="col-75"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;input type="text" id="lname" name="lastname" placeholder="Last Name"&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&lt;/div&gt;<br>
+						&nbsp;&lt;div class="row"&gt;<br>
+							&nbsp;&nbsp;&lt;div class="col-25"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;label for="country">Country:&lt;/label&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;div class="col-75"&gt;<br>
+							&nbsp;&nbsp;&lt;select id="country" name="country"&gt;<br>
+								&nbsp;&nbsp;&nbsp;&lt;option value="australia">Australia&lt;/option&gt;<br>
+								&nbsp;&nbsp;&nbsp;&lt;option value="canada">Canada&lt;/option&gt;<br>
+								&nbsp;&nbsp;&nbsp;&lt;option value="usa">USA&lt;/option&gt;<br>
+								&nbsp;&nbsp;&nbsp;&lt;option value="usa">Philippines&lt;/option&gt;<br>
+							&nbsp;&nbsp;&lt;/select&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&lt;/div&gt;<br>
+						&nbsp;&lt;div class="row"&gt;<br>
+							&nbsp;&nbsp;&lt;div class="col-25"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;label for="comment">Comment:&lt;/label&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class="col-75"&gt;<br>
+								&nbsp;&nbsp;&nbsp;&lt;textarea id="comment" name="comment" placeholder="Write your comment here" 
+									style="height:100px">&lt;/textarea&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&lt;/div&gt;<br>
+						&nbsp;&lt;div class="row"&gt;<br>
+							&nbsp;&nbsp;&lt;div class="col-25">&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class="col-75"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&lt;/div&gt;<br>
+					&lt;/form&gt;<br>
+					</code>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content" id="tables">
+		<div class="container">
+			<div class="col">
+				<h3 id="component">Tables</h3>
+				<p class="p1">
+					Tables are a best way to organize a lot of data. Use &lt;tr&gt; for row and &lt;td&gt; for column, when building a table. Here are some examples of tables.
+				</p>
+				<div class="container1">
+					<div class="table ht-table table-1">
+						<table>
+						  <thead>
+						    <th>Surname</th>
+						    <th>Given Name</th>
+						    <th>Country</th>
+						  </thead>
+						  <tr>
+						    <td>Belga</td>
+						    <td>Maze</td>
+						    <td>Belgium</td>
+						  </tr>
+						  <tr>
+						    <td>Potter</td>
+						    <td>James</td>
+						    <td>Iceland</td>
+						  </tr>
+						  <tr>
+						    <td>Leavey</td>
+						    <td>Peter</td>
+						    <td>Israel</td>
+						  </tr>
+						  <tr>
+						    <td>Scott</td>
+						    <td>John</td>
+						    <td>Singapore</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+				<div class="container1">
+					<div class="table ht-table-bord table-2">
+						<table>
+						 <tr>
+						    <th>Surname</th>
+						    <th>Given Name</th>
+						    <th>Country</th>
+						  </tr>
+						  <tr>
+						    <td>Belga</td>
+						    <td>Maze</td>
+						    <td>Belgium</td>
+						  </tr>
+						  <tr>
+						    <td>Potter</td>
+						    <td>James</td>
+						    <td>Iceland</td>
+						  </tr>
+						  <tr>
+						    <td>Leavey</td>
+						    <td>Peter</td>
+						    <td>Israel</td>
+						  </tr>
+						  <tr>
+						    <td>Scott</td>
+						    <td>John</td>
+						    <td>Singapore</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+				<div class="code">
+					<code id="tbl2">
+						table {<br>
+						&nbsp;&nbsp;    border-collapse: collapse;<br>
+						&nbsp;&nbsp;    width: 100%;<br>
+						}<br>
+						<br>
+
+						table, td, th {    <br>
+						&nbsp;&nbsp;    border: 1px solid green;<br>
+						&nbsp;&nbsp;    text-align: left;<br>
+						}<br>
+						<br>
+
+						th, td {<br>
+						&nbsp;&nbsp;    color: #021408;<br>
+						&nbsp;&nbsp;    padding: 16px;<br>
+						}<br>
+						
+					</code>
+					<code id="tbl2">
+						table {<br>
+						&nbsp;&nbsp;    border-collapse: collapse;<br>
+						&nbsp;&nbsp;    width: 100%;<br>
+						}<br>
+						<br>
+
+						th, td {<br>
+						&nbsp;&nbsp;    color: #021408;<br>
+						&nbsp;&nbsp;    padding: 16px;<br>
+						}<br>
+						<br>
+
+						.table th{    <br>
+						&nbsp;&nbsp;    border-bottom: 3px solid #00ff29;<br>
+						&nbsp;&nbsp;    text-align: left;<br>
+						}<br>
+
+					</code>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content" id="typography">
+		<div class="container">
+			<div class="col">
+				<h3 id="component">Typography</h3>
+				<p class="p1">
+					Typography includes headings, lists, and paragraph.
+				</p>
+				<div class="container1">
+					<div class="col">
+						<div class="container2">
+							<h2 class="thead">HEADINGS</h2>
+							<p>
+								Headings create a family of distinct sizes each with specific letter-spacing, line-height, and margins. While displaying any heading, browser adds one line before and one line after that heading.
+							</p>
+								<div class="head">
+								<h1>Handtouch</h1>
+								<h2>Handtouch</h2>
+								<h3 id="hey">Handtouch</h3>
+								<h4>Handtouch</h4>
+								<h5>Handtouch</h5>
+								<h6>Handtouch</h6>
+
+								<strong>Handtouch</strong>
+								<u>Handtouch</u>
+								<em>Handtouch</em>
+								<a>Handtouch</a>
+
+								<div class="clearfix"></div>
+								</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="code-right">
+							<code>
+								&nbsp;&lt;h1>Handtouch&lt;/h1> <br>
+								&nbsp;&lt;h2>Handtouch&lt;/h2> <br>
+								&nbsp;&lt;h3>Handtouch&lt;/h3> <br>
+								&nbsp;&lt;h4>Handtouch&lt;/h4> <br>
+								&nbsp;&lt;h5>Handtouch&lt;/h5> <br>
+								&nbsp;&lt;h6>Handtouch&lt;/h6> <br>
+								<br>
+								&nbsp;&lt;strong>Bolded&lt;/strong> <br>
+								&nbsp;&lt;u>Underlined&lt;/u> <br>
+								&nbsp;&lt;em>Italicized&lt;/em> <br>
+								&nbsp;&lt;a>Colored&lt;/a> <br>
+
+							</code>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="container2">
+						<h2 class="thead">LISTS</h2>
+						<p> List is a common way to display items. Unordered list use &lt;ul&gt; &lt;/ul&gt; tag while, ordered list use &lt;ul&gt; &lt;/ol&gt; tag.</p>
+						<p><b>>>> Unordered List</b></p>
+							<ul>
+								<li>Unordered List
+									<ul>
+										<li>Use the circle list style</li>
+									</ul>
+								</li>
+								<li>Item 1
+									<ul>
+										<li>Item 1.1</li>
+										<li>Item 1.2</li>
+									</ul>
+								</li>
+								<li>Item 2</li>
+							</ul>
+						<p><b>>>> Ordered List</b></p>	
+							<ol>
+								<li>Ordered List
+									<ol>
+										<li>Use number list as basic style</li>
+									</ol>
+								</li>
+								<li>Item 1
+									<ol>
+										<li>Item 1.1</li>
+										<li>Item 1.2</li>
+									</ol>
+								</li>
+								<li>Item 2</li>
+							</ol>
+					</div>
+					<div class="code-right">
+							<code id="tbl1">
+								&lt;!-- Unordered List -->
+								&nbsp;&lt;ul><br>
+									&nbsp;&nbsp;&lt;li>Item 1&lt;/li><br>
+									&nbsp;&nbsp;&lt;li>Item 2&lt;/li><br>
+										&nbsp;&nbsp;&nbsp;&lt;ul><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&lt;li>Item 2.1&lt;/li><br>
+											&nbsp;&nbsp;&nbsp;&lt;li>Item 2.2/li>li><br>
+										&nbsp;&nbsp;&nbsp;&lt;/ul><br>
+									&nbsp;&nbsp;&lt;/li><br>
+									&nbsp;&nbsp;&lt;li>Item 3&lt;/li><br>
+								&nbsp;&lt;/ul><br>
+								&lt;!-- Ordered List --><br>
+								&nbsp;&lt;ol><br>
+									&nbsp;&nbsp;&lt;li>Item 1&lt;/li><br>
+									&nbsp;&nbsp;&lt;li>Item 2&lt;/li><br>
+										&nbsp;&nbsp;&nbsp;&lt;ol><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&lt;li>Item 2.1&lt;/li><br>
+											&nbsp;&nbsp;&nbsp;&lt;li>Item 2.2/li>li><br>
+										&nbsp;&nbsp;&nbsp;&lt;/ol><br>
+									&nbsp;&nbsp;&lt;/li><br>
+									&nbsp;&nbsp;&lt;li>Item 3&lt;/li><br>
+								&nbsp;&lt;/ol><br>				
+							</code>
+						<div class="clearfix"></div>
+					</div>
+
+				</div>
+				<div class="col">
+					<div class="container2">
+						<h2 class="thead">PARAGRAPH</h2>
+						<p>  Paragraph use &lt;p&gt; &lt;/p&gt; tag. 
+							<p>
+								&nbsp;&nbsp;&nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit augue, tempus at lacus sit amet, rhoncus tincidunt dui. Suspendisse potenti. Mauris ac rutrum ante. Phasellus mi sem, scelerisque vitae ultrices quis, eleifend ut odio. Integer ac ultrices dolor. Sed sollicitudin diam sed laoreet pellentesque.
+							</p>
+							<p>
+								&nbsp;&nbsp;&nbsp;&nbsp;Sed feugiat tempor erat, ut porttitor leo ultrices ac. Morbi semper gravida diam et rhoncus. Vestibulum nisl metus, tincidunt sit amet risus nec, malesuada pellentesque lacus. Phasellus eleifend malesuada faucibus. Nunc tincidunt malesuada purus, ac volutpat orci sollicitudin in. Vivamus cursus tincidunt mauris vitae sodales. Proin pulvinar elementum consequat. Integer convallis, arcu id egestas aliquet, ante lacus semper dui, quis convallis erat eros sed eros. Mauris sit amet nunc lorem.
+
+							</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="code-right">
+						<code id="tbl1">
+							p{<br>
+							&nbsp;&nbsp;  font-size: 14px;<br>
+							&nbsp;&nbsp;  padding: 1% 2%;<br>
+							&nbsp;&nbsp;  color: #021408;<br>
+							}<br>
+							<br>
+							&lt;!-- PS:use &amp;nbsp; code before the content of paragraph tag. -->
+						</code>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+	</div>
+
+	<div class="content" id="grid">
+		<div class="container">
+			<div class="col" >
+				<h3 id="component"> Grid System </h3>
+					<p class="p1">
+						The grid is a 12-column with a max width of 900px. The max width can be changed with one line of CSS and all columns will resize accordingly.  The syntax is simple and it makes coding responsive much easier. 
+					</p>
+					<div class="grid-container">
+					 <div class="con-1">one</div> <div class="con-11"> eleven</div>
+					 <div class="con-2">two</div> <div class="con-10"> ten</div>
+					 <div class="con-3">three</div> <div class="con-9"> nine</div>
+					 <div class="con-4">four</div> <div class="con-8"> eight</div>
+					 <div class="con-5">five</div> <div class="con-7"> seven</div>
+					 <div class="con-6">six</div> <div class="con-6"> six</div>
+					 <div class="con-7"> seven</div> <div class="con-5">five</div>
+					 <div class="con-8"> eight</div> <div class="con-4">four</div>
+					 <div class="con-9"> nine</div> <div class="con-3">three</div>
+					 <div class="con-10"> ten</div> <div class="con-2">two</div>
+					 <div class="con-11"> eleven</div><div class="con-1"> one</div>
+					 <div class="con-12"> twelve</div>
+					</div>
+
+					<div class="grid-container">
+					 <h3 style="margin: 10px auto 7px;">Example</h3>
+					 <div class="con-3"> container 3 [.con-3] </div> 
+					 <div class="con-6"> container 6 [.con-6] </div> 
+					 <div class="con-3"> container 3 [.con-3] </div>
+					</div> 
+
+				<div class="code">
+				 <code>
+				  &lt;div class="con-3"&gt; container 3 [.con-3] &lt;/div&gt; <br>
+				  &lt;div class="con-6"&gt; container 6 [.con-6] &lt;/div&gt; <br>
+				  &lt;div class="con-3"&gt; container 3 [.con-3] &lt;/div&gt; <br>
+				 </code>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="col"> 
+				<div><img src="img/pic.png"></div>
+				<div class="social">
+					<a href="#"><img src="img/fb.png" alt="Facebook"></a>
+					<a href="#"><img src="img/gmail.png" alt="GooglePlus"></a>
+				</div>
+				<div class="foot">&copy;2017 Handtouch</div> 
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
