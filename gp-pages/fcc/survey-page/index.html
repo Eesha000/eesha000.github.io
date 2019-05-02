@@ -1,1 +1,141 @@
+<!-- https://codepen.io/anon/pen/RdGNMd?editors=1100 -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+	<div id="main">
+	 <div id="main-con">
+	  <section id="header">
+	  	<div id="header-inner">
+	  	 <h1 id="title">Survey Form</h1>
+	  	</div>
+	  </section>
+	  <section id="survey">
+	  	<div id="survey-inner">
+	  	 <p id="description">Let us know about your experience with your phone</p> 
+	  	 <!-- <p>We always want to improve-could you help us out for a few minutes and let us know about your experience with your phone.</p>  -->
+		 <form action="#" id="survey-form">
+		 <div class="questions">
+			<label for="name" id="name-label">Name : </label>
+			<div class="group">
+				<input type="text" name="name" id="name" required placeholder="Your Name">
+			</div>
+	  	 </div>
+		 <div class="questions">
+			<label for="email" id="email-label">Email : </label>
+			<div class="group">
+				<input type="email" name="e-mail" id="email" required placeholder="Your Email">
+			</div>
+	  	 </div>
+		 <div class="questions">
+			<label for="age" id="number-label">Age : </label>
+			<div class="group">
+				<input type="number" name="age" id="number" min="18" max="35" required placeholder="Your Age">
+			</div>
+	  	 </div>
+	  	 <div class="questions">
+			<label for="age"> Current Role : </label>
+			<div class="group">
+				<select id="dropdown">
+					<option>Student</option>
+					<option>Working</option>
+					<option>Self-Employed</option>
+				</select>
+			</div>
+	  	 </div>
+	  	 <div class="questions">
+			<label for="do-you">Do you have phone? </label>
+			<div class="group">
+			
+			<input type="radio" id="yes1" name="ra" value="yes" checked> yes <br>
+			<!-- <label for="yes1" id="yes-label">yes </label><br> -->
+
+			<input type="radio" id="no1" name="ra" value="no"> no
+			<!-- <label for="no1" id="no-label">no </label> -->
+			</div>
+	  	 </div>
+	  	 <div class="questions">
+			<label for="age"> What brand are you using? </label>
+			<div class="group">
+				<select id="dropdown">
+					<option>Samsung</option>
+					<option>Huawei</option>
+					<option>Oppo</option>
+					<option>Apple</option>
+					<option>Nokia</option>
+					<option>Vivo</option>
+					<option>CherryMobile</option>
+					<option>Nexus</option>
+					<option>Blackberry</option>
+				</select>
+			</div>
+	  	 </div>
+		 <div class="questions">
+			<label for="a">What do you like with your phone? </label>
+			<div class="group">
+			<input type="checkbox" value="d" class="group1"> Camera			<br>
+			<input type="checkbox" value="f" class="group1"> Storage Capacity		<br>
+			<input type="checkbox" value="f" class="group1"> Design and Build Quality<br>
+			<input type="checkbox" value="j" class="group1"> Display					<br>
+			<input type="checkbox" value="m" class="group1"> Processing Power		<br>
+			<input type="checkbox" value="n" class="group1"> Screen					<br>
+			<input type="checkbox" value="n" class="group1"> Price					<br>
+			<input type="checkbox" value="y" class="group1"> Battery life			<br>
+			<div id="others">
+				<label for="other-features" id="of">Others: </label>
+				<input type="text" name="other-features" id="input-of">
+			</div>
+			</div>
+	  	 </div>
+	  	 <div class="questions">
+			<label for="a">What do you dislike with your phone? </label>
+			<div class="group">
+			<input type="checkbox" value="d" class="group1"> Camera			<br>
+			<input type="checkbox" value="f" class="group1"> Storage Capacity		<br>
+			<input type="checkbox" value="f" class="group1"> Design and Build Quality<br>
+			<input type="checkbox" value="j" class="group1"> Display					<br>
+			<input type="checkbox" value="m" class="group1"> Processing Power		<br>
+			<input type="checkbox" value="n" class="group1"> Screen					<br>
+			<input type="checkbox" value="n" class="group1"> Price					<br>
+			<input type="checkbox" value="y" class="group1"> Battery life			<br>
+			<div id="others">
+				<label for="other-features" id="of">Others: </label>
+				<input type="text" name="other-features" id="input-of">
+			</div>
+			</div>
+	  	 </div>
+	  	 <div class="questions">
+			<label for="r2">Are you satistied with your phone? </label>
+			<div class="group">
+			<input type="radio" name="r1" id="no6" value="vs"> Very Satisfied		<br>
+			<input type="radio" name="r1" id="no1" value="s"> Satisfied			<br>
+			<input type="radio" name="r1" id="no2" value="f"> Fair				<br>
+			<input type="radio" name="r1" id="no3" value="df"> Dissatisfied		<br>
+			<input type="radio" name="r1" id="no3" value="vd"> Very Dissatisfied	<br>
+			</div>
+	  	 </div>
+	  	 <div class="questions">
+			<label for="suggest">Any Suggestions or Comments? </label>
+			<div class="group">
+				<textarea name="suggest" id="suggest" rows="5"></textarea>	
+			</div>
+	  	 </div>
+	  	 <button type="submit" id="submit" class="bt-primary">Send Now</button>
+		 </form>
+	  	 
+	  	</div>
+	  </section>
+	  <footer>
+	  	Copyright &copy; 2019 | <a href="#">CodeMe</a>
+	  </footer>
+	 </div>
+	</div>
+</body>
+</html>

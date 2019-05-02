@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+
+}
+
+html, body {
+	margin: 0 auto;
+    min-height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+	background-color: rgba(243, 242, 242, 0.05);
+}
+
+#main {
+	width: 100%;
+  	padding-left: 5%;
+  	padding-right: 5%;
+  	margin: 0 auto;
+}
+
+#main-con {
+	margin: 0 5%;
+	text-align: center;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+	font-family: arial;
+
+}
+
+#header {
+  	text-align: center;
+  	/*background-image: linear-gradient(to top, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), url('one.jpg');*/
+	/*background-size: 100% 100%;*/
+	/*background-repeat: no-repeat;*/
+	background-color: rgba(10, 76, 158, 0.74);
+}
+
+#header-inner {
+	padding: 2% 0;
+}
+
+#title {
+	font-family: Stencil, Rockwell, Arial;
+	font-weight: bold;
+  	text-align: center;
+	margin: 0 auto;
+	padding: 4% 0;
+	font-size: 4vmax;
+	line-height: 1.5;
+	text-transform: uppercase;
+	color: whitesmoke;
+}
+
+#survey {
+	background-color: rgba(234, 234, 234, 0.45);  
+	margin: 0 auto;
+}
+
+#survey-inner {
+	padding: 3% 5%;
+	text-align: justify;
+}
+
+#description {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 23px;
+	font-family: Tahoma;
+	padding: 3% 0;
+}
+
+.questions {
+	padding: 1% 3%;
+	display: flex;
+}
+
+.questions:hover {
+	background-color: #fefefe;	
+}
+
+label {
+	padding: 1% 4%;
+	width: 52%;
+	display: flex;
+}
+
+.group {
+	width: 48%;
+	display: block;
+}
+
+input{
+	font-size: 18px;
+	background-color: #fff;
+	width: 100%;
+	padding: 11px 11px 11px 17px;
+	color: #2980b9;
+	border: 1px solid rgba(0,0,0,0);
+	border-bottom-color: rgba(140, 146, 185, 0.65);
+}
+
+select {
+	font-size: 15px;
+	background-color: #fff;
+	width: 100%;
+	margin-left: 3%;
+	padding: 11px 13px 11px 17px;
+	border: 1px solid rgba(0,0,0,0);
+	border-bottom-color: rgba(140, 146, 185, 0.65);
+}
+
+input:focus, input[text = text]:focus, textarea:focus, select:focus {
+	background-color: #ffffff;
+	border: 1px solid #2980b9;
+	outline: none;
+}
+
+input[type = checkbox] {
+	width: 12%;
+	margin: 2% auto;
+	display: inline-block;
+}
+
+input[type = radio] {
+	width: 12%;
+	margin: 2% auto;
+	display: inline-block;
+}
+
+#others {
+	width: 100%;
+	display: flex;
+}
+
+#of {
+	text-align: justify;
+	padding: 13px 15px;
+	width: 30%;
+	display: inline-block;
+}
+
+#input-of {
+	width: 70%;
+	display: inline-block;
+}
+
+#suggest {
+	width: 100%;
+	margin: 0 2%;
+}
+
+textarea {
+	border: 1px solid rgba(0,0,0,0);
+	border-bottom-color: rgba(140, 146, 185, 0.65);
+	padding: 3px 3px;
+}
+
+.bt-primary {
+	width: 30%;
+	display: block;
+	text-align: center;
+	padding: 1% 2%;
+	margin: 1% auto;
+  	border: 1px solid #2980b9;
+  	font-size: 13px;
+  	line-height: 1.7;
+    text-decoration: none;
+    outline: 0px;
+  	background-color: transparent;
+  	color: #0d5486;
+  	border-radius: 4px!important;
+} 
+
+.bt-primary:hover {
+	/*4c79b5*/
+	/*border: 1px solid #2980b9;*/
+	/*box-shadow: 0 0 3px rgba(0,0,0, 0.5);*/
+	color: #f6f6f6;
+  	background-color: #4c79b5!important;
+}
+
+footer {
+	background-color: rgba(14, 16, 19, 0.88); /*2b2d32 d5d5d6*/
+	padding: 3% 0;
+	font-size: 15px;
+	text-align: center;
+	font-family: arial;
+	color: #eee;
+}
+
+footer a {
+	color: #eee;
+	text-decoration:none;
+}
+
+@media screen and (max-width: 586px) {
+	#main {
+		padding: 0;
+		margin: 0;
+		height: 100%;
+	}
+
+	#main-con {
+		padding: 0;
+		margin: 0;
+	}
+
+	#survey-inner p {
+		font-size: 16px;
+		padding: 1% 0!important;
+	}
+
+	.questions {
+		font-size: 13px;
+		padding: 1% 0!important;
+		display: block;
+	}
+
+	label {
+		padding: 0;
+		width: 100%;
+	}
+
+	.group {
+		width: 100%;
+	}
+
+	.bt-primary {
+		font-size: 11px;
+		line-height: 1.6;
+		width: 40%;
+	}
+
+	footer {
+		padding: 5% 0;
+	}
+}
+/*
+
+@media screen and (max-width: 992px) {
+  #main {
+	max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #main {
+  	max-width: 1140px;
+  }
+}
+
+
+https://bonn0062.github.io/anne_bonner/#contact*/
+
